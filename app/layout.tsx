@@ -4,10 +4,6 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "BTC Macro Dashboard",
   description: "Macroeconomic dashboard for Bitcoin",
-  // 公式の指示通り、<head> 内に base:app_id のメタタグを追加します
-  other: {
-    "base:app_id": "6971e49288e3bac59cf3d32e",
-  },
 };
 
 export default function RootLayout({
@@ -17,6 +13,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      <head>
+        {/* Baseミニアプリ所有権確認用のメタタグを直接配置 */}
+        <meta name="base:app_id" content="6971e49288e3bac59cf3d32e" />
+      </head>
       <body>{children}</body>
     </html>
   );
