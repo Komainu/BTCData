@@ -14,8 +14,8 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
-        {/* Baseミニアプリ所有権確認用のメタタグを直接配置 */}
-        <meta name="base:app_id" content="6971e49288e3bac59cf3d32e" />
+        {/* Baseミニアプリ所有権確認用のメタタグ（新しいID） */}
+        <meta name="base:app_id" content="69ab406449645da9eb55ad7e" />
       </head>
       <body>{children}</body>
     </html>
